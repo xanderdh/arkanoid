@@ -8,5 +8,3 @@ var gameCondition = {
 	level: 1,
 	condition: "PLAY"
 };
-
-

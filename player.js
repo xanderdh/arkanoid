@@ -70,8 +70,8 @@ var ball = {
 		if ( isCollision(this.x, this.y - this.r, this.r * 2, this.r * 2, player.x, gameCondition.h - player.h, player.w, player.h) ) {
 			this.dy = -1;
 			
-			//player resist phisicks
-			if (player.dir == 0) {
+			//player resist physics
+			if (player.dir === 0) {
 				this.speedX += 0.05;
 				this.speedY += 0.05;
 			}
@@ -92,8 +92,6 @@ var ball = {
 			}
 		}
 
-
-
 		this.x += this.speedX * this.dx;
 		this.y += this.speedY * this.dy;
 
@@ -106,4 +104,4 @@ var ball = {
 			this.y = gameCondition.h - player.h - ball.r - 1;
 		}
 	}
-}
+};

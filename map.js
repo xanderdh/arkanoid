@@ -47,6 +47,6 @@ var greed = {
 			this.map[i].draw();
 		}
 	}
-}
+};
 
 greed.makeMap(1);
